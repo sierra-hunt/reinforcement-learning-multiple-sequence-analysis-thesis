@@ -1,0 +1,42 @@
+********************************************************************************
+INDELible V1.03 by Will Fletcher : Simulation began at: Tue Apr 22 14:16:47 2025
+********************************************************************************
+
+  Actual Insertion : Deletion Ratio  0.459658 : 0.540342	(Total indel rate = 1)
+  Actual Indel : Substitution Ratio  0.09323 : 0.90677	(Total event rate = 1)
+  Actual average insertion length    4.40957
+  Actual average deletion length     5.20362
+  Number of insertion events         188
+  Number of deletion events          221
+  Number of substitution events      3978
+
+  * Block 1 was completed in 0.052 seconds.
+
+********************************************************************************
+
+  * Simulation completed. Whole batch took: 0.073 seconds.
+
+INDELible V1.03 Simulations completed at: Tue Apr 22 14:16:47 2025
+
+********************************************************************************
+
+
+ Original Control File 
+
+-----------------------
+
+
+[TYPE] AMINOACID 2
+        
+[MODEL] model_level_50
+[submodel] WAG
+[statefreq] 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05
+[indelmodel] POW 1.7 100
+[indelrate] 0.05
+
+[TREE] tree_level_50 (Seq1:0.1,Seq2:0.1,Seq3:0.1,Seq4:0.1);
+
+[PARTITIONS] partition_level_50
+[tree_level_50 model_level_50 100]
+
+[EVOLVE] partition_level_50 100 level_50

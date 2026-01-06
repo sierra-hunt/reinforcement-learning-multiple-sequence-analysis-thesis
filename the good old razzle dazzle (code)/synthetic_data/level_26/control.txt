@@ -1,0 +1,14 @@
+[TYPE] AMINOACID 2
+        
+[MODEL] model_level_26
+[submodel] WAG
+[statefreq] 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05
+[indelmodel] POW 1.7 100
+[indelrate] 0.040400000000000005
+
+[TREE] tree_level_26 (Seq1:0.1,Seq2:0.1,Seq3:0.1,Seq4:0.1);
+
+[PARTITIONS] partition_level_26
+[tree_level_26 model_level_26 56]
+
+[EVOLVE] partition_level_26 100 level_26

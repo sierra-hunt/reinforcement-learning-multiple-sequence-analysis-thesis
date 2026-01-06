@@ -1,0 +1,14 @@
+[TYPE] AMINOACID 2
+        
+[MODEL] model_level_22
+[submodel] WAG
+[statefreq] 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05
+[indelmodel] POW 1.7 100
+[indelrate] 0.0388
+
+[TREE] tree_level_22 (Seq1:0.1,Seq2:0.1,Seq3:0.1,Seq4:0.1,Seq5:0.1,Seq6:0.1,Seq7:0.1,Seq8:0.1);
+
+[PARTITIONS] partition_level_22
+[tree_level_22 model_level_22 49]
+
+[EVOLVE] partition_level_22 100 level_22
